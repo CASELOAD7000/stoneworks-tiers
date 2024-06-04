@@ -44,7 +44,7 @@ public class TierCommand {
                         .executes((sender, args) -> {
                             Player player = (Player) sender;
                             OfflinePlayer targetPlayer = (OfflinePlayer) args.get("target");
-                            if (!targetPlayer.hasPlayedBefore()) {
+                            if (targetPlayer == null || (!targetPlayer.isOnline() && !targetPlayer.hasPlayedBefore())) {
                                 sender.sendMessage(ChatColor.RED + "That player has not played before");
                                 return;
                             }
@@ -68,7 +68,7 @@ public class TierCommand {
                         .executes((sender, args) -> {
                             Player player = (Player) sender;
                             OfflinePlayer targetPlayer = (OfflinePlayer) args.get("target");
-                            if (!targetPlayer.hasPlayedBefore()) {
+                            if (targetPlayer == null || (!targetPlayer.isOnline() && !targetPlayer.hasPlayedBefore())) {
                                 sender.sendMessage(ChatColor.RED + "That player has not played before");
                                 return;
                             }
@@ -85,7 +85,7 @@ public class TierCommand {
                         .withArguments(new OfflinePlayerArgument("target"))
                         .executes((sender, args) -> {
                             OfflinePlayer targetPlayer = (OfflinePlayer) args.get("target");
-                            if (!targetPlayer.hasPlayedBefore()) {
+                            if (targetPlayer == null || (!targetPlayer.isOnline() && !targetPlayer.hasPlayedBefore())) {
                                 sender.sendMessage(ChatColor.RED + "That player has not played before");
                                 return;
                             }
@@ -118,7 +118,7 @@ public class TierCommand {
                                 .withArguments(new OfflinePlayerArgument("player"))
                                 .executes((sender, args) -> {
                                     OfflinePlayer player = (OfflinePlayer) args.get("player");
-                                    if (!player.hasPlayedBefore()) {
+                                    if (player == null || (!player.isOnline() && !player.hasPlayedBefore())) {
                                         sender.sendMessage(ChatColor.RED + "That player has not played before");
                                         return;
                                     }
@@ -143,7 +143,7 @@ public class TierCommand {
                                 .withArguments(new OfflinePlayerArgument("player"))
                                 .executes((sender, args) -> {
                                     OfflinePlayer player = (OfflinePlayer) args.get("player");
-                                    if (!player.hasPlayedBefore()) {
+                                    if (player == null || (!player.isOnline() && !player.hasPlayedBefore())) {
                                         sender.sendMessage(ChatColor.RED + "That player has not played before");
                                         return;
                                     }
