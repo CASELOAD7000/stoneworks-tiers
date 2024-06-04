@@ -1,0 +1,109 @@
+
+# GUI display name
+name: "Tiers"
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+size: 54
+
+# Stained pane border around the menu
+border: true
+
+# The items shown inside the menu
+items:
+  10:
+    material: BOOK
+    display_name: "&aS+ Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to S+"
+    action: SET_TIER
+    tier: "S+"
+  11:
+    material: BOOK
+    display_name: "&aS Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to S"
+    action: SET_TIER
+    tier: "S"
+  12:
+    material: BOOK
+    display_name: "&aS- Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to S-"
+    action: SET_TIER
+    tier: "S-"
+  13:
+    material: BOOK
+    display_name: "&aA+ Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to A+"
+    action: SET_TIER
+    tier: "A+"
+  14:
+    material: BOOK
+    display_name: "&aA Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to A"
+    action: SET_TIER
+    tier: "A"
+  15:
+    material: BOOK
+    display_name: "&aA- Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to A-"
+    action: SET_TIER
+    tier: "A-"
+  16:
+    material: BOOK
+    display_name: "&aB+ Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to B+"
+    action: SET_TIER
+    tier: "B+"
+  19:
+    material: BOOK
+    display_name: "&aB Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to B"
+    action: SET_TIER
+    tier: "B"
+  20:
+    material: BOOK
+    display_name: "&aB- Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to B-"
+    action: SET_TIER
+    tier: "B-"
+  21:
+    material: BOOK
+    display_name: "&aC+ Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to C+"
+    action: SET_TIER
+    tier: "C+"
+  22:
+    material: BOOK
+    display_name: "&aC Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to C"
+    action: SET_TIER
+    tier: "C"
+  23:
+    material: BOOK
+    display_name: "&aC- Tier"
+    lore:
+      - ""
+      - "&e● Click to set %player_name%'s tier to C-"
+    action: SET_TIER
+    tier: "C-"

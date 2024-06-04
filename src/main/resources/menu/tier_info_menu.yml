@@ -1,0 +1,20 @@
+
+# GUI display name
+name: "Tier Info"
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+size: 27
+
+# Stained pane border around the menu
+border: true
+
+# The items shown inside the menu
+items:
+  13:
+    material: PLAYER_HEAD
+    display_name: "&e%player_name%"
+    lore:
+      - "&7Tier&8: &e%tiers_tier%"
+    append_on_cooldown: "&c%tiers_cooldown% remaining on cooldown."
+    textured: true

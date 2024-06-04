@@ -1,0 +1,21 @@
+suffix: " &7[%tiers_tier%]"
+
+cooldown:
+  enabled: true
+  duration: 14
+
+tiers:
+  1: 'S+'
+  2: 'S'
+  3: 'S-'
+  4: 'A+'
+  5: 'A'
+  6: 'A-'
+  7: 'B+'
+  8: 'B'
+  9: 'B-'
+  10: 'C+'
+  11: 'C'
+  12: 'C-'
+
+tester_inactive_threshold: 7

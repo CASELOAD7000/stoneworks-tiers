@@ -1,0 +1,27 @@
+
+# GUI display name
+name: "Are you sure?"
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+size: 27
+
+# Stained pane border around the menu
+border: true
+
+# The items shown inside the menu
+items:
+  12:
+    material: LIME_CONCRETE
+    display_name: "&aConfirm"
+    lore:
+      - ""
+      - "&e● Click to confirm."
+    action: CONFIRM
+  14:
+    material: RED_CONCRETE
+    display_name: "&cCancel"
+    lore:
+      - ""
+      - "&e● Click to cancel."
+    action: CANCEL

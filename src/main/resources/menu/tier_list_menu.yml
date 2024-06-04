@@ -1,0 +1,28 @@
+
+# GUI display name
+name: "Tier List"
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+size: 54
+
+# Stained pane border around the menu
+border: true
+
+# The items shown inside the menu
+items:
+  paginated_item: # The item to display players. Configurable actions not supported.
+    material: PLAYER_HEAD
+    display_name: "&e%player_name%"
+    lore:
+      - "&7Tier&8: &e%tiers_tier%"
+    append_on_cooldown: "&c%tiers_cooldown% remaining on cooldown."
+    textured: true
+  46:
+    material: ARROW
+    display_name: "&aPrevious Page"
+    action: PREVIOUS_PAGE
+  52:
+    material: ARROW
+    display_name: "&aNext Page"
+    action: NEXT_PAGE

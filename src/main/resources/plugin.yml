@@ -1,0 +1,27 @@
+name: Tiers
+version: '${project.version}'
+main: me.caseload.tiers.Tiers
+api-version: 1.20
+author: [Caseload]
+depend:
+  - CommandAPI
+  - PlaceholderAPI
+  - LuckPerms
+  - TAB
+permissions:
+  tier.list:
+    default: op
+  tier.info:
+    default: op
+  tier.set:
+    default: op
+  tier.remove:
+    default: op
+  tier.testers:
+    default: op
+  tier.testers.add:
+    default: op
+  tier.testers.remove:
+    default: op
+  tier.weight_bypass:
+    default: op
